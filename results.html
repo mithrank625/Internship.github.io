@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Results</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"> <!-- Custom CSS -->    
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Internship Listings</h2>
+        <form action="{{ url_for('search') }}" method="POST" class="mb-4">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="type">Internship Type</label>
+                    <input type="text" class="form-control" id="type" name="type" placeholder="e.g. Software Engineering" value="{{ internship_type }}">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="company">Company Name</label>
+                    <input type="text" class="form-control" id="company" name="company" placeholder="e.g. Google" value="{{ company_name }}">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" name="location" placeholder="e.g. New York" value="{{ location }}">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <ul class="list-group mt-4">
+            {% for internship in internships %}
+            <li class="list-group-item">
+                <h5>{{ internship.title }}</h5>
+                <p><strong>Company:</strong> {{ internship.company.display_name }}</p>
+                <p><strong>Location:</strong> {{ internship.location.display_name }}</p>
+                <p><strong>Description:</strong> {{ internship.description|safe }}</p>
+                <a href="{{ internship.redirect_url }}" class="btn btn-info">Apply Now</a>
+            </li>
+            {% else %}
+            <li class="list-group-item">No internships found.</li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="btn btn-secondary mt-4">Back to Search</a>
+    </div>
+</body>
+</html>
