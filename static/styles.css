@@ -1,0 +1,88 @@
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    background-color: #222; /* Dark background */
+    color: #f8f9fa; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: auto;
+    padding: 40px; /* Padding for the container */
+    background: #333; /* Dark gray background for content area */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow for elegance */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+
+h1 {
+    color: #e6b80d; /* Gold color for headings */
+    margin-bottom: 30px; /* Space below the title */
+    text-align: center; /* Center the title */
+    font-size: 2.5em; /* Larger title size */
+}
+
+.form-group label {
+    font-weight: bold; /* Bold labels */
+    color: #e6b80d; /* Gold color for labels */
+}
+
+.form-control {
+    background-color: #f8f9fa; /* Light input background */
+    border: 1px solid #e6b80d; /* Gold border */
+    color: #000000; /* Dark text color */
+}
+
+/* Remove background color change on focus */
+.form-control:focus {
+    border-color: #e6b80d; /* Gold border on focus */
+    box-shadow: none; /* No shadow on focus */
+}
+
+.list-group-item {
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 5px; /* Rounded corners for list items */
+    margin-bottom: 20px; /* Space between list items */
+    padding: 15px; /* Padding for list items */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for background color and scale */
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.list-group-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: #e6b80d; /* Gold color for links */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.list-group-item a:hover {
+    color: #ffd700; /* Brighter gold on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.btn {
+    margin-top: 20px; /* Space above buttons */
+    background-color: #e6b80d; /* Gold button color */
+    border: none; /* No border */
+    color: #ffffff !important; /* Ensure text color is white */
+    font-weight: bold; /* Bold text for buttons */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+}
+
+.btn:hover {
+    background-color: #ffd700; /* Brighter gold on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+footer {
+    margin-top: 30px; /* Space above footer */
+    text-align: center; /* Center footer text */
+    color: #aaa; /* Light gray text color for footer */
+}
