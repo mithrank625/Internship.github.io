@@ -17,7 +17,7 @@ The Internship Finder is a web application that helps users search and filter in
 1. Clone The Repository
 ```bash
    git clone https://github.com/yourusername/Internship.github.io.git
-   cd Internship.github.io.git
+   cd Internship.github.io.git exit
 2. Download everything needed to create backend and flask
 ```bash
    pip install requirements.txt
