@@ -61,28 +61,28 @@ h1 {
 }
 
 .list-group-item a:hover {
-    color: #ffd700; /* Brighter gold on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #ffd700;
+    text-decoration: underline; 
 }
 
 .btn {
-    margin-top: 20px; /* Space above buttons */
-    background-color: #e6b80d; /* Gold button color */
-    border: none; /* No border */
-    color: #ffffff !important; /* Ensure text color is white */
-    font-weight: bold; /* Bold text for buttons */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 5px; /* Rounded button corners */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+    margin-top: 20px; 
+    background-color: #e6b80d;
+    border: none; 
+    color: #ffffff !important; 
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #ffd700; /* Brighter gold on hover */
-    transform: translateY(-2px); /* Slightly lift the button on hover */
+    background-color: #ffd700;
+    transform: translateY(-2px);
 }
 
 footer {
-    margin-top: 30px; /* Space above footer */
-    text-align: center; /* Center footer text */
-    color: #aaa; /* Light gray text color for footer */
+    margin-top: 30px;
+    text-align: center;
+    color: #aaa;
 }
