@@ -21,7 +21,7 @@ The **Internship Finder** is a web application that helps users search and filte
 Start by cloning this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/Internship.github.io.git
+git clone https://github.com/mithrank625/Internship.github.io.git
 cd Internship.github.io
 ```
 ### 2. Install Dependencies
